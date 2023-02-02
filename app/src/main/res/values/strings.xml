@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CurriculumVitaeApp</string>
+    <string name="fullname">FullName</string>
+    <string name="age">Age</string>
+    <string name="email">Email</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="skills">Skills</string>
+    <string name="reset">RESET</string>
+    <string name="next">NEXT</string>
+    <string name="android">ANDROID</string>
+    <string name="ios">iOS</string>
+    <string name="flutter">Flutter</string>
+    <string name="toast_empty">"Please fill out all required fields."</string>
+    <string name="toast_email">"Please enter a valid e-mail address."</string>
+    <string name="toast_below30">"You have to work on your skills."</string>
+    <string name="toast_excellent">"You are an excellent %1$s Developer ."</string>
+    <string name="toast_excellent_skills">"You have excellent skills ."</string>
+    <string name="toast_notbad">"You have good skills ."</string>
+</resources>

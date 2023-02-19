@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Academic Projects and internships/ESPRIT/4SIM4-Projects/AndroidProjects/curriculumVitaeV2/app/src/main/res/drawable/background_border.xml" value="0.224" />
+        <entry key="..\:/Academic Projects and internships/ESPRIT/4SIM4-Projects/AndroidProjects/curriculumVitaeV2/app/src/main/res/drawable/bg_gradient.xml" value="0.224" />
+        <entry key="..\:/Academic Projects and internships/ESPRIT/4SIM4-Projects/AndroidProjects/curriculumVitaeV2/app/src/main/res/drawable/gradiant_splash.xml" value="0.224" />
+        <entry key="..\:/Academic Projects and internships/ESPRIT/4SIM4-Projects/AndroidProjects/curriculumVitaeV2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.186" />
+        <entry key="..\:/Academic Projects and internships/ESPRIT/4SIM4-Projects/AndroidProjects/curriculumVitaeV2/app/src/main/res/drawable/splash_background.xml" value="0.224" />
+        <entry key="..\:/Academic Projects and internships/ESPRIT/4SIM4-Projects/AndroidProjects/curriculumVitaeV2/app/src/main/res/layout-v24/activity_second.xml" value="0.2942708333333333" />
+        <entry key="..\:/Academic Projects and internships/ESPRIT/4SIM4-Projects/AndroidProjects/curriculumVitaeV2/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Academic Projects and internships/ESPRIT/4SIM4-Projects/AndroidProjects/curriculumVitaeV2/app/src/main/res/layout/activity_resume.xml" value="0.2942708333333333" />
+        <entry key="..\:/Academic Projects and internships/ESPRIT/4SIM4-Projects/AndroidProjects/curriculumVitaeV2/app/src/main/res/layout/activity_second.xml" value="0.33" />
+        <entry key="..\:/Academic Projects and internships/ESPRIT/4SIM4-Projects/AndroidProjects/curriculumVitaeV2/app/src/main/res/layout/activity_splash_screen.xml" value="0.16354166666666667" />
+        <entry key="..\:/Academic Projects and internships/ESPRIT/4SIM4-Projects/AndroidProjects/curriculumVitaeV3/app/src/main/res/drawable/ic_person.xml" value="0.2365" />
+        <entry key="..\:/Academic Projects and internships/ESPRIT/4SIM4-Projects/AndroidProjects/curriculumVitaeV3/app/src/main/res/layout/activity_main.xml" value="0.26875" />
+        <entry key="..\:/Academic Projects and internships/ESPRIT/4SIM4-Projects/AndroidProjects/curriculumVitaeV3/app/src/main/res/layout/activity_resume.xml" value="0.2247191011235955" />
+        <entry key="..\:/Academic Projects and internships/ESPRIT/4SIM4-Projects/AndroidProjects/curriculumVitaeV3/app/src/main/res/layout/activity_second.xml" value="0.25" />
+        <entry key="..\:/Academic Projects and internships/ESPRIT/4SIM4-Projects/AndroidProjects/curriculumVitaeV3/app/src/main/res/layout/fragment_about_me.xml" value="0.26875" />
+        <entry key="..\:/Academic Projects and internships/ESPRIT/4SIM4-Projects/AndroidProjects/curriculumVitaeV3/app/src/main/res/layout/fragment_hobbies.xml" value="0.11481481481481481" />
+        <entry key="..\:/Academic Projects and internships/ESPRIT/4SIM4-Projects/AndroidProjects/curriculumVitaeV3/app/src/main/res/layout/fragment_lang.xml" value="0.14" />
+        <entry key="..\:/Academic Projects and internships/ESPRIT/4SIM4-Projects/AndroidProjects/curriculumVitaeV3/app/src/main/res/layout/fragment_skills.xml" value="0.11481481481481481" />
+        <entry key="..\:/Academic Projects and internships/ESPRIT/4SIM4-Projects/AndroidProjects/curriculumVitaeV3/app/src/main/res/menu/toolbar_menu.xml" value="0.12291666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

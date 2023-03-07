@@ -1,0 +1,120 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "d80bd64a0351160e7c461057b4f46963",
+    "entities": [
+      {
+        "tableName": "educations",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`image` TEXT NOT NULL, `compnName` TEXT NOT NULL, `compAdd` TEXT NOT NULL, `startD` TEXT NOT NULL, `endD` TEXT NOT NULL, `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "image",
+            "columnName": "image",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "compnName",
+            "columnName": "compnName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "compAdd",
+            "columnName": "compAdd",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "startD",
+            "columnName": "startD",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "endD",
+            "columnName": "endD",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "experiences",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`image` TEXT NOT NULL, `compnName` TEXT NOT NULL, `compAdd` TEXT NOT NULL, `startD` TEXT NOT NULL, `endD` TEXT NOT NULL, `descr` TEXT NOT NULL, `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "image",
+            "columnName": "image",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "compnName",
+            "columnName": "compnName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "compAdd",
+            "columnName": "compAdd",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "startD",
+            "columnName": "startD",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "endD",
+            "columnName": "endD",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "descr",
+            "columnName": "descr",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'd80bd64a0351160e7c461057b4f46963')"
+    ]
+  }
+}

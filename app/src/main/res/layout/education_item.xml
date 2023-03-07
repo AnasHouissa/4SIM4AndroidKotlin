@@ -64,10 +64,16 @@
                     android:id="@+id/ivEduCompAdd"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|end"
+                    android:layout_gravity="bottom|start"
                     android:text="aaaaaa"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/ivEduDelete"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom|end"
+                    android:src="@drawable/ic_delete"/>
             </FrameLayout>
         </LinearLayout>
 

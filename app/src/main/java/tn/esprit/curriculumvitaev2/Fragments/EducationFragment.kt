@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout.OnRefreshListener
 import kotlinx.coroutines.*
 import tn.esprit.curriculumvitaev2.Adapters.EducationAdapter
+import tn.esprit.curriculumvitaev2.Adapters.ExperienceAdapter
+import tn.esprit.curriculumvitaev2.Database.Database
 import tn.esprit.curriculumvitaev2.Database.Models.Education
 import tn.esprit.curriculumvitaev2.R
 import tn.esprit.curriculumvitaev2.databinding.FragmentEducationBinding
@@ -18,7 +20,9 @@ import tn.esprit.curriculumvitaev2.databinding.FragmentEducationBinding
 
 class EducationFragment : Fragment() {
     private lateinit var mainView: FragmentEducationBinding
-    private val educAdapter = EducationAdapter()
+    private lateinit var db: Database
+
+    private lateinit var educAdapter : EducationAdapter
 
 
     override fun onCreateView(
@@ -26,7 +30,8 @@ class EducationFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         mainView = FragmentEducationBinding.inflate(layoutInflater, container, false)
-        setupRecycler()
+        db = Database.getDatabase(requireContext())
+        educAdapter= EducationAdapter(db)
         swipeLayoutSetup()
 
 
@@ -61,72 +66,13 @@ class EducationFragment : Fragment() {
         educAdapter.diff.submitList(getDataFromApi())
     }
 
-    fun getDataFromApi(): MutableList<Education> {
-        return mutableListOf<Education>(
-         /*   Education(
-                R.drawable.ic_logo_massachusetts,
-                "Massachusetts",
-                "United States",
-                "01/09/2019",
-                "TODAY"
-            ),
-            Education(
-                R.drawable.ic_logo_oxford,
-                "Oxford",
-                "United Kingdom",
-                "01/09/2018",
-                "01/03/2019",
-            ),
-            Education(
-                R.drawable.ic_logo_stanford,
-                "Stanford",
-                "United Kingdom",
-                "01/09/2016",
-                "01/09/2017",
-            ),
-            Education(
-                R.drawable.ic_logo_cambridge,
-                "Cambridge",
-                "United Kingdom",
-                "01/09/2016",
-                "01/09/2017",
-            ),
-            Education(
-                R.drawable.ic_logo_harvard,
-                "Harvard",
-                "United Kingdom",
-                "01/09/2016",
-                "01/09/2017",
-            ),
-            Education(
-                R.drawable.ic_logo_esprit,
-                "Esprit",
-                "Tunisia",
-                "01/09/2013",
-                "01/09/2015",
-            ),
-            Education(
-                R.drawable.ic_logo_cambridge,
-                "Cambridge",
-                "United Kingdom",
-                "01/09/2016",
-                "01/09/2017",
-            ),
-            Education(
-                R.drawable.ic_logo_harvard,
-                "Harvard",
-                "United Kingdom",
-                "01/09/2016",
-                "01/09/2017",
-            ),
-            Education(
-                R.drawable.ic_logo_esprit,
-                "Esprit",
-                "Tunisia",
-                "01/09/2013",
-                "01/09/2015",
-            ),*/
-        )
+    fun getDataFromApi(): List<Education> {
+        return db.getEduDao().getAllEducations()
+
+    }
+    override fun onResume() {
+        super.onResume()
+        setupRecycler()
     }
 }
 

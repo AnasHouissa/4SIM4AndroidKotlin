@@ -1,6 +1,8 @@
 package tn.esprit.curriculumvitaev2.Fragments
 
+import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -15,22 +17,25 @@ import tn.esprit.curriculumvitaev2.databinding.FragmentHobbiesBinding
 
 
 class ExperienceFragment : Fragment() {
+    private var TAG="ExperienceFragment"
     private lateinit var mainView: FragmentExperienceBinding
     private lateinit var db: Database
+    private lateinit var experienceAdapter:ExperienceAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        Log.d(TAG,"onCreateView")
         mainView = FragmentExperienceBinding.inflate(inflater, container, false)
         db = Database.getDatabase(requireContext())
-        setupRecycler()
+        experienceAdapter=ExperienceAdapter(db)
+
 
         return mainView.root
     }
 
     fun setupRecycler() {
-        val experienceAdapter = ExperienceAdapter()
         mainView.rc.adapter = experienceAdapter
         mainView.rc.layoutManager = LinearLayoutManager(this.context)
         experienceAdapter.diff.submitList(getDataFromApi())
@@ -38,7 +43,18 @@ class ExperienceFragment : Fragment() {
 
     fun getDataFromApi(): List<Experience> {
         return db.getExpDao().getAllExperiences()
-
     }
+
+    override fun onResume() {
+        super.onResume()
+        setupRecycler()
+    }
+
+
+
+
+
+
+
 
 }
